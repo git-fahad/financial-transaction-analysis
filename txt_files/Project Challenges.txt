@@ -1,0 +1,57 @@
+Beginner Level: Basic Operations
+	1.	Extract Transaction IDs:
+	•	Extract only the Transaction IDs (first column) from the dataset and store them in a separate array.
+	•	Real-Life Use Case: Identifying individual transactions for further analysis or auditing.
+	2.	Convert Transaction Dates:
+	•	Extract Transaction Dates (third column) and convert them to datetime objects.
+	•	Real-Life Use Case: Financial analysis requires time-based grouping (e.g., monthly or quarterly transactions).
+	3.	Find Unique Transaction Types:
+	•	Find the unique transaction types (fourth column) in the dataset.
+	•	Real-Life Use Case: Categorizing transactions into types for financial reporting or customer behavior analysis.
+	4.	Calculate Total Amount Spent:
+	•	Calculate the total amount spent or withdrawn (sixth column) across all transactions.
+	•	Real-Life Use Case: Businesses or financial institutions track total spending or withdrawals for budgeting and financial planning.
+
+Intermediate Level: Data Cleaning and Transformation
+	5.	Remove Rows with Missing Values:
+	•	Remove any rows with missing values and count how many rows were removed.
+	•	Real-Life Use Case: Ensuring clean and accurate data for analysis, especially in financial contexts where missing values can skew results.
+	6.	Normalize the Amount Spent:
+	•	Normalize the amount spent (sixth column) to a scale from 0 to 1.
+	•	Real-Life Use Case: Normalizing financial data for comparison or preparing the data for machine learning models.
+	7.	Convert Amount to Integers and Calculate Average:
+	•	Convert the amount spent (sixth column) to integers and calculate the average transaction amount.
+	•	Real-Life Use Case: Simplifying financial data and calculating the average helps businesses understand customer behavior.
+	8.	Filter for “Withdrawal” Transactions:
+	•	Filter the data to include only “Withdrawal” transactions and display the first five rows.
+	•	Real-Life Use Case: Analyzing withdrawal transactions separately from other transaction types.
+
+Advanced Level: Data Aggregation and Statistical Analysis
+	9.	Compute Total Balance After Each Transaction:
+	•	Compute the total balance (seventh column) after each transaction for every record.
+	•	Real-Life Use Case: Understanding the remaining balance after each financial transaction helps track account status over time.
+	10.	Find the Highest and Lowest Transaction Amount:
+	•	Find the highest and lowest transaction amount in the dataset.
+	•	Real-Life Use Case: Identifying outliers or extreme financial behaviors in transactions is crucial for fraud detection or assessing business risk.
+	11.	Group Data by Region and Calculate Total Withdrawal:
+	•	Group the data by Region (eighth column) and calculate the total withdrawal for each region.
+	•	Real-Life Use Case: Analyzing regional patterns in withdrawals helps businesses or financial institutions tailor their services to specific regions.
+	12.	Calculate the Standard Deviation of Transaction Amounts:
+	•	Calculate the standard deviation of the transaction amounts (sixth column).
+	•	Real-Life Use Case: Standard deviation helps assess the volatility or variation in transaction amounts, useful for financial risk assessments.
+
+Expert Level: Advanced Data Analysis and Machine Learning Preparation
+	13.	Detect Outliers in Transaction Amounts:
+	•	Identify and remove outliers in the transaction amounts (sixth column) using Z-scores or interquartile range (IQR).
+	•	Real-Life Use Case: Removing outliers helps improve the accuracy of models and avoids skewed results in financial predictions.
+	14.	Calculate Moving Average of Transaction Amounts:
+	•	Compute the moving average of the transaction amounts (sixth column) over a rolling window of 5 transactions.
+	•	Real-Life Use Case: The moving average smooths out transaction amounts over time and can be used for forecasting future financial behavior.
+	15.	Create a Heatmap of Transaction Frequency by Region and Type:
+	•	Create a heatmap showing the frequency of transaction types by region.
+	•	Real-Life Use Case: Visualizing transaction types across regions helps in identifying trends and patterns for business strategy.
+	16.	Build a Transaction Classification Model:
+	•	Use the data to build a simple machine learning model that predicts whether a transaction is a “Withdrawal” or a “Transfer” based on the amount, date, and region.
+	•	Real-Life Use Case: Automating the classification of transactions can help businesses streamline transaction processing.
+
+These questions progressively help you explore various ways to manipulate, analyze, and visualize financial transaction data using NumPy. They range from basic indexing and aggregation to more advanced data analysis techniques, applicable to real-world financial applications.
