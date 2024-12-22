@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -15,8 +17,33 @@ print(data[0:5])
 
 ## Transformations
 
-# Calculating the
+# Calculating the total amount by transfer type
 
+transfer_type = data[:, 3]
+amounts = data[:,4].astype(float)
+
+print(transfer_type.shape)
+print(amounts.shape)
+
+sum_of_withdrawal = 0
+sum_of_Transfer = 0
+
+for i in range(len(transfer_type)):
+	if transfer_type[i] == 'Withdrawal':
+		sum_of_withdrawal += amounts[i]
+	else:
+		sum_of_Transfer +=amounts[i]
+
+print(f'Sum of Withdrawal: {sum_of_withdrawal}')
+print(f'sum_of_Transfer: {sum_of_Transfer}')
+print("\n")
+
+# Extracting only the Transaction IDs (first column) from the dataset and store them in a separate array.
+
+transaction_ids = data[:,0]
+print(transaction_ids)
+
+# Extract Transaction Dates (third column) and convert them to datetime objects.
 
 
 
