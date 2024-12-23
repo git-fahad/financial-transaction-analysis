@@ -1,5 +1,4 @@
 from datetime import datetime
-
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -43,8 +42,12 @@ print("\n")
 transaction_ids = data[:,0]
 print(transaction_ids)
 
-# Extract Transaction Dates (third column) and convert them to datetime objects.
+# Find the unique transaction types (fourth column) in the dataset.
 
+print(np.unique(data[:,3]))
 
+# Calculate the total amount spent or withdrawn (sixth column) across all transactions.
 
+print(f'The total amount spent is: {np.sum(data[:,6].astype(float))}')
 
+# Remove any rows with missing values and count how many rows were removed.
