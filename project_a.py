@@ -51,3 +51,11 @@ print(np.unique(data[:,3]))
 print(f'The total amount spent is: {np.sum(data[:,6].astype(float))}')
 
 # Remove any rows with missing values and count how many rows were removed.
+
+# Normalize the amount spent (sixth column) to a scale from 0 to 1.
+
+column_amount = (data[:,6]).astype(float)
+print(column_amount)
+
+normalized_value = (column_amount - np.min(column_amount))/(np.max(column_amount) - np.min(column_amount))
+print("Normalized values:", normalized_value)
